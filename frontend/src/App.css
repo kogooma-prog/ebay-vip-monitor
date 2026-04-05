@@ -58,6 +58,44 @@ h1 {
   cursor: not-allowed;
 }
 
+.info-row {
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sync-indicator {
+  color: #2196F3;
+  font-weight: 600;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.syncing-notice {
+  background: #e3f2fd;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #1976D2;
+}
+
+.loading-msg,
+.empty-msg {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #666;
+}
+
 .info {
   margin-top: 10px;
   color: #666;
